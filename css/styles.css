@@ -502,16 +502,15 @@ img {
 /* FOOTER */
 .footer-desc {
   display: flex;
-  flex-direction: column;
 }
 
 .footer-social {
   display: flex;
-  gap: 120px;
 }
 
 .footer-logo-item {
   max-width: 264px;
+  margin-right: 120px;
 }
 .accent {
   color: var(--third-title-color);
@@ -563,6 +562,10 @@ img {
 }
 
 /* Social-media */
+
+.footer-social-media {
+  margin-right: 80px;
+}
 
 .social-media-list {
   display: flex;
@@ -803,6 +806,7 @@ img {
   width: 100%;
   height: 120px;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-top: 8px;
   padding-left: 16px;
@@ -820,6 +824,7 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -836,12 +841,12 @@ img {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--main-bgr-color);
-  background-image: url(/images/Property\ click.svg);
+  background-image: url(/images/property-click.svg);
 }
 
 .modal-form-check:focus + .modal-form-check-desc::before {
   background-color: var(--main-bgr-color);
-  background-image: url(/images/Property\ click.svg);
+  background-image: url(../images/property-click.svg);
 }
 
 .modal-form-submit {
@@ -851,6 +856,7 @@ img {
   background: var(--third-title-color);
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   transition: background-color var(--transition-dur-and-func);
 }
